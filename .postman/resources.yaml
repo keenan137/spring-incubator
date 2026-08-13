@@ -1,0 +1,10 @@
+workspace:
+  id: c32b537c-1e49-478c-8ea1-fb0bc3bd56a1
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/Booking Service: 6a7db660e71e49ad85cb9244
+    ../postman/collections/Customer Service: 6a7db660e71e49ad85cb9245
+    ../postman/collections/Flight Service: 6a7db660a93a0ef4a03fa605

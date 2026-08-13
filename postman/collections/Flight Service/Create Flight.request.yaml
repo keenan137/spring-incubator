@@ -1,0 +1,23 @@
+$kind: http-request
+url: "{{baseUrl}}/flights"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"flightNumber\": \"F21\",\r
+
+    \    \"origin\": \"JHB\",\r
+
+    \    \"destination\": \"CPT\",\r
+
+    \    \"departureTime\": \"2026-08-13T12:00:00\",\r
+
+    \    \"arrivalTime\": \"2026-08-13T14:00:00\",\r
+
+    \    \"seatsAvailable\": 25,\r
+
+    \    \"seatCost\": 1520.50\r
+
+    }"
+order: 2145305127614166

@@ -1,0 +1,6 @@
+$kind: http-request
+name: Get Booking by ID
+method: GET
+url: '{{baseUrl}}/bookings/{{bookingId}}'
+description: 'Fetch a single booking by its integer ID. Returns 200 with the booking object, or 404 if not found.'
+order: 1000

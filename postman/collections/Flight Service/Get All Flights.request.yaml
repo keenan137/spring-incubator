@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get All Flights
+url: "{{baseUrl}}/flights"
+method: GET
+order: 2307638069338191

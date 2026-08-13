@@ -1,0 +1,16 @@
+$kind: collection
+name: Customer Service
+variables:
+  baseUrl: ""
+  customerId: ""
+  admin_password: ""
+  admin_username: ""
+auth:
+  - id: 1d68e444-a52b-4e52-a7dc-355634b98f71
+    type: basic
+    name: Basic Auth
+    credentials:
+      password: "{{admin_password}}"
+      username: "{{admin_username}}"
+    rules:
+      url: http://localhost:8201

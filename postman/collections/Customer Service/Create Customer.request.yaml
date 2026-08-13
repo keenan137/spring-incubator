@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{baseUrl}}/customers"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"username\": \"KeenanDup\",\r
+
+    \    \"firstName\": \"Keenan\",\r
+
+    \    \"lastName\": \"Du Plessis\",\r
+
+    \    \"passportNumber\": \"123456789\",\r
+
+    \    \"email\": \"keenan.dup137@gmail.com\",\r
+
+    \    \"phoneNumber\": \"0763943009\"\r
+
+    }"
+order: 2767034545865860

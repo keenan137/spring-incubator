@@ -1,0 +1,22 @@
+$kind: http-example
+description: "Search for a booking by customerId or referenceNumber. searchType is an enum: CUSTOMER_ID_SEARCH or REFERENCE_NUMBER_SEARCH. Returns 200 with the booking or 404 if not found."
+request:
+  url: "{{baseUrl}}/bookings/search"
+  method: POST
+  headers:
+    Content-Type: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "searchType": "CUSTOMER_ID_SEARCH",
+        "customerId": 1,
+        "referenceNumber": "REF01"
+      }
+response:
+  statusCode: 200
+  statusText: ""
+  body:
+    type: json
+    content: ""
+order: 1338011474198527
