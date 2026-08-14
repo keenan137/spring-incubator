@@ -1,0 +1,17 @@
+$kind: collection
+name: Booking Service
+description: Requests for testing and debugging the BookingsController endpoints. Base URL defaults to http://localhost:8080.
+variables:
+  baseUrl: http://localhost:8080
+  bookingId: "1"
+  admin_username: ""
+  admin_password: ""
+auth:
+  - id: ce1b3575-3c9e-4e60-bee8-ae79d59808f2
+    type: basic
+    name: Basic Auth
+    credentials:
+      username: "{{admin_username}}"
+      password: "{{admin_password}}"
+    rules:
+      url: http://localhost:8080

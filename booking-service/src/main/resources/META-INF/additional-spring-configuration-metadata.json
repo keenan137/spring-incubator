@@ -1,0 +1,33 @@
+{
+  "properties": [
+    {
+      "name": "client.service.customer.customer_url",
+      "type": "java.lang.String",
+      "description": "Customer Service URL."
+    },
+    {
+      "name": "client.service.customer.admin_username",
+      "type": "java.lang.String",
+      "description": "Customer Service Admin Username."
+    },
+    {
+      "name": "client.service.customer.admin_password",
+      "type": "java.lang.String",
+      "description": "Customer Service Admin Password."
+    },
+    {
+      "name": "client.service.flight.flight_url",
+      "type": "java.lang.String",
+      "description": "Flight Service URL."
+    },
+    {
+      "name": "client.service.flight.admin_username",
+      "type": "java.lang.String",
+      "description": "Flight Service Admin Username."
+    },
+    {
+      "name": "client.service.flight.admin_password",
+      "type": "java.lang.String",
+      "description": "Flight Service Admin Password."
+    }
+  ] }

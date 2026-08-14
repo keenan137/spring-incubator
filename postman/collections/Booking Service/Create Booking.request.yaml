@@ -1,0 +1,16 @@
+$kind: http-request
+name: Create Booking
+method: POST
+url: "{{baseUrl}}/bookings"
+order: 2000
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "referenceNumber": "REF01",
+      "customerId": 1,
+      "flightId": 1
+    }
+description: Creates a new booking. Returns 201 with the created booking (including generated id and referenceNumber).

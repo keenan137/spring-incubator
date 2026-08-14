@@ -1,0 +1,10 @@
+$kind: http-request
+name: Get Customer By ID
+url: "{{baseUrl}}/customers/{{customerId}}"
+method: GET
+auth:
+  type: basic
+  credentials:
+    username: "{{admin_username}}"
+    password: "{{admin_password}}"
+order: 2000

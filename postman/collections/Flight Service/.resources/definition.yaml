@@ -1,0 +1,16 @@
+$kind: collection
+name: Flight Service
+variables:
+  baseUrl: ""
+  flightId: ""
+  admin_username: ""
+  admin_password: ""
+auth:
+  - id: bf54adaa-49ce-4ff2-80d5-a6239f463923
+    type: basic
+    name: Basic Auth
+    credentials:
+      username: "{{admin_username}}"
+      password: "{{admin_password}}"
+    rules:
+      url: http://localhost:8202

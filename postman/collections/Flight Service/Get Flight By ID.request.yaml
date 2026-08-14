@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get Flight By ID
+url: "{{baseUrl}}/flights/{{flightId}}"
+method: GET
+order: 1786621742588
