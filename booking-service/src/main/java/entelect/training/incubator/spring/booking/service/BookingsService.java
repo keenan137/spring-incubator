@@ -2,6 +2,7 @@ package entelect.training.incubator.spring.booking.service;
 
 import entelect.training.incubator.spring.booking.client.CustomerClient;
 import entelect.training.incubator.spring.booking.client.FlightClient;
+import entelect.training.incubator.spring.booking.client.LoyaltyRewardsClient;
 import entelect.training.incubator.spring.booking.model.*;
 import entelect.training.incubator.spring.booking.repository.BookingRepository;
 import org.springframework.stereotype.Service;
@@ -16,11 +17,13 @@ public class BookingsService {
     private final BookingRepository bookingRepository;
     private final CustomerClient customerClient;
     private final FlightClient flightClient;
+    private final LoyaltyRewardsClient rewardsClient;
 
-    public BookingsService(BookingRepository bookingRepository, CustomerClient customerClient, FlightClient flightClient) {
+    public BookingsService(BookingRepository bookingRepository, CustomerClient customerClient, FlightClient flightClient, LoyaltyRewardsClient rewardsClient) {
         this.bookingRepository = bookingRepository;
         this.customerClient = customerClient;
         this.flightClient = flightClient;
+        this.rewardsClient = rewardsClient;
     }
 
     public CompletableFuture<Booking> createBooking(Booking booking) {
@@ -39,6 +42,10 @@ public class BookingsService {
                     if (flight == null) {
                         throw new RuntimeException("Flight not found");
                     }
+
+                    // TODO: Handle failure
+                    rewardsClient.captureReward(customer.passportNumber);
+
                     return bookingRepository.save(booking);
                 });
     }

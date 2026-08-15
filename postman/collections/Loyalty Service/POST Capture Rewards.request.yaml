@@ -1,0 +1,36 @@
+$kind: http-request
+name: POST Capture Rewards
+url: "{{baseUrl}}/"
+method: POST
+headers:
+  content-type: text/xml
+body:
+  type: xml
+  content: "<soapenv:Envelope\r
+
+    \    xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"\r
+
+    \    xmlns:sch=\"http://entelect.training/incubator/spring-loyalty-service\">\r
+
+    \r
+
+    \   <soapenv:Header/>\r
+
+    \r
+
+    \   <soapenv:Body>\r
+
+    \      <sch:captureRewardsRequest>\r
+
+    \         <sch:passportNumber>A1234567</sch:passportNumber>\r
+
+    \         <sch:amount>250.00</sch:amount>\r
+
+    \      </sch:captureRewardsRequest>\r
+
+    \   </soapenv:Body>\r
+
+    \r
+
+    </soapenv:Envelope>\r\n"
+order: 1786716464397
