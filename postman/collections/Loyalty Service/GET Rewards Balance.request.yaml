@@ -1,0 +1,34 @@
+$kind: http-request
+name: GET Rewards Balance
+url: "{{baseUrl}}/"
+method: POST
+headers:
+  Content-Type: text/xml
+body:
+  type: xml
+  content: "<soapenv:Envelope\r
+
+    \    xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"\r
+
+    \    xmlns:sch=\"http://entelect.training/incubator/spring-loyalty-service\">\r
+
+    \r
+
+    \   <soapenv:Header/>\r
+
+    \r
+
+    \   <soapenv:Body>\r
+
+    \      <sch:rewardsBalanceRequest>\r
+
+    \         <sch:passportNumber>123456789</sch:passportNumber>\r
+
+    \      </sch:rewardsBalanceRequest>\r
+
+    \   </soapenv:Body>\r
+
+    \r
+
+    </soapenv:Envelope>"
+order: 3904956206454608

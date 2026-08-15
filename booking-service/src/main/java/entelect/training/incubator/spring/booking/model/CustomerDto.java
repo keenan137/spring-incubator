@@ -1,17 +1,17 @@
 package entelect.training.incubator.spring.booking.model;
 
 public class CustomerDto {
-    private Integer id;
+    public Integer id;
 
-    private String username;
+    public String username;
 
-    private String firstName;
+    public String firstName;
 
-    private String lastName;
+    public String lastName;
 
-    private String passportNumber;
+    public String passportNumber;
 
-    private String email;
+    public String email;
 
-    private String phoneNumber;
+    public String phoneNumber;
 }
